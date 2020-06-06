@@ -1,0 +1,101 @@
+:root {
+  --DarkBlue: hsl(240, 38%, 20%);
+  --GrayishBlue: hsl(240, 18%, 77%);
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background: url("images/pattern-curve.svg") no-repeat;
+
+  background-position: left bottom;
+  background-size: auto;
+}
+.container {
+  padding: 20px;
+}
+.fondo {
+  padding: 0.9em 1em;
+  background: url("images/pattern-bg.svg") top no-repeat;
+  background-size: contain;
+  height: auto;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.foto {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px -1px -8px grey;
+}
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 1em;
+  background: url("images/pattern-quotes.svg") top center no-repeat;
+
+  margin-top: 30px;
+  border: 1px solid transparent;
+}
+.description {
+  color: var(--DarkBlue);
+  text-align: center;
+  font-size: 0.55em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+.autor {
+  color: var(--DarkBlue);
+  text-align: center;
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.autor span {
+  color: var(--GrayishBlue);
+}
+
+.botones {
+  background: white;
+  width: 55px;
+  display: flex;
+  position: relative;
+  top: -25px;
+  justify-content: space-between;
+  padding: 0.4em 0.5em;
+  border-radius: 30px;
+  box-shadow: 1px -1px 16px grey;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    letter-spacing: 1px;
+    padding: 20px 50px;
+  }
+  .content {
+    width: 50%;
+    position: relative;
+    left: 150px;
+  }
+  .description {
+    font-size: 1em;
+  }
+  .autor {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+}
